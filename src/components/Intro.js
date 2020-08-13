@@ -1,19 +1,22 @@
 import React from 'react'
-import { Jumbotron, Button, Container } from 'react-bootstrap'
+import profileImage from '../images/profileimage.png'
+import { Jumbotron, Container } from 'react-bootstrap'
 
 export default function Intro() {
     return (
         <div>
             <Container>
-                <Jumbotron>
-                    <h1>Hello, world!</h1>
-                    <p>
-                        This is a simple hero unit, a simple jumbotron-style component for calling
-                        extra attention to featured content or information.
-                </p>
-                    <p>
-                        <Button variant="primary">Learn more</Button>
-                    </p>
+                <Jumbotron style={{
+                    backgroundColor: "#0d47a1",
+                    display: "flex",
+                    alignItems: "center",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                }}>
+                    <div>
+                        <img src={profileImage} style={{ height: "120px", width: "auto" }} alt="profileImage" />
+                    </div>
+                    <h1>Welcome to my page!</h1>
                 </Jumbotron>
             </Container>
         </div>
